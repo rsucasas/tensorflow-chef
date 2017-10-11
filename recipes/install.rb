@@ -180,8 +180,8 @@ when "debian"
 
   execute 'apt-get update -y'
 
-  # python-pillow   libcupti-dev
-  packages = %w{pkg-config zip g++ zlib1g-dev unzip swig git build-essential cmake unzip libopenblas-dev liblapack-dev linux-image-generic linux-image-extra-virtual linux-source linux-headers-generic python python-numpy python-dev python-pip python-lxml libcurl3-dev python-wheel python-six }
+  # python-pillow   libcupti-dev   python-wheel 
+  packages = %w{pkg-config zip g++ zlib1g-dev unzip swig git build-essential cmake unzip libopenblas-dev liblapack-dev linux-image-generic linux-image-extra-virtual linux-source linux-headers-generic python python-numpy python-dev python-pip python-lxml libcurl3-dev python-six }
   for lib in packages do
     package lib do
       action :install
