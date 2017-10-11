@@ -7,6 +7,7 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'kagent', github: 'hopshadoop/kagent-chef', branch: 'master'
+cookbook 'conda', github: "hopshadoop/conda-chef", branch: "master"
 cookbook 'java'
 cookbook 'magic_shell'
 cookbook 'build-essential'
